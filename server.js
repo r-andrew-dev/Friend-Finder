@@ -15,7 +15,7 @@ app.use(express.static('app/public'));
 
 // ROUTES
 
-// require("./app/routing/apiRoutes.js")(app);
+require("./app/routing/apiRoutes.js")(app);
 
 require("./app/routing/htmlRoutes.js")(app);
 
