@@ -5,23 +5,122 @@
     box-sizing: border-box;
 }
 
+h1 {
+    margin-top: 10%;
+}
+
 .jumbotron.one{
     margin-top: 5%;
     background-image: url('../images/Main-PB&J.jpg');
     background-size: cover;
-    color: white;
+    color: seashell;
     text-shadow: 2px 2px black;
     text-align: center;
+    height: 80%;
 
 }
 
 .jumbotron.two{
-    margin-top: 100px;
+    margin-top: 5%;
     background-image: url('../images/1-PB&JMain.jpg');
     background-size: cover;
     background-position: 0% 50%; 
-    color: white;
-    text-shadow: 2px 2px black;
+    color: seashell;
+    text-shadow: 2px 2px #34424D;
     text-align: center;
+    height: 80%;
 
 }
+
+#start-question {
+    background-color:  #34424D;
+    color: seashell;
+    text-align: center;
+    margin-top: 5%;
+    background-position: 0% 20%;
+    height: 80%;
+    background-size: 70% 100%;
+    background-repeat: no-repeat;
+}
+
+input {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    color: seashell;
+    width: 80%;
+    font-size: 24px;
+    background-color: #34424D;
+    border: none;
+}
+
+#question-start {
+    position: relative;
+    top: 30%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 44px;
+}
+
+#question-startButton {
+    position: absolute;
+    top: 70%;
+    right: 5%;
+    font-size: 44px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#questions {
+    text-align: center;
+    margin-top: 5%;
+    background-position: 0% 20%;
+    height: 80%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: seashell;
+}
+
+#question {
+
+    position: relative;
+    top: 30%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 44px;
+    text-shadow: 2px 2px #34424D;
+}
+
+#range {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
+
+#left-range {
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    text-shadow: 2px 2px #34424D;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+
+}
+
+#right-range {
+
+    position: absolute;
+    top: 55%;
+    right: 15%;
+    text-shadow: 2px 2px #34424D;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+
+}
+
+#question-button {
+    position: absolute;
+    top: 70%;
+    right: 5%;
+    font-size: 44px;
+    font-family: 'Roboto Mono', monospace;
+}
+

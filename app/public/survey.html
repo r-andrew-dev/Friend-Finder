@@ -8,9 +8,11 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Mono&display=swap" rel="stylesheet">
       <!-- custom css -->
       <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <title>Compatibility Survey</title>
+    <title>Survey</title>
 </head>
 
 <body>
@@ -21,27 +23,24 @@
         </div>
     </div>
 
-    <div class="container-fluid" id='start-question' style="background-image:url('public/assets/images/2-person-name.png');display:none;">
-        <h3 id='question'>What do you call yourself?</h3>
+    <div class="container-fluid" id='start-question' style="background-image:url('./assets/images/2-person-name.png');display:none;">
+        <h3 id='question-start'>What do you call yourself?</h3>
+        <br>
         <form>
-            <input type="text" class="form-control" placeholder="put your name here">
+            <input type="text" placeholder="put your name here" required>
         </form>
-          <button type="button" class="btn btn-success" id="question-button">next</button>
+    </br>
+          <button type="submit" class="btn btn-success" id="question-startButton">next</button>
     </div>
 
 
-    <div class="container-fluid" id='questions' style="display:none;">
-        <div id="image-div">
-            <img src='#'>
-        </div>
+    <div class="container-fluid" id='questions' style="display:none;background-image:url('./assets/images/3-matrix.jpg')">
         <h3 id='question'>How much do you love the Matrix?</h3>
-        <div class="d-flex justify-content-center my-4">
-            <span class="font-weight-bold blue-text mr-2 mt-1" id='left-range'></span>
-            <form class="range-field w-20">
-              <input class="border-0" type="range" min="1" max="5">
+            <span class="font-weight-bold mr-2 mt-1" id='left-range'>Never seen it</span>
+            <form class="range-field w-10">
+              <input id='range' class="border-0" type="range" min="1" max="5">
             </form>
-            <span class="font-weight-bold purple-text ml-2 mt-1" id='right-range'></span>
-          </div>
+            <span class="font-weight-bold purple-text ml-2 mt-1" id='right-range'>There is no spoon</span>
           <button type="button" class="btn btn-success" id="question-button">next</button>
     </div>
 
