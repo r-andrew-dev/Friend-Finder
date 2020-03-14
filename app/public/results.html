@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Mono&display=swap" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Results</title>
+</head>
+
+<body>
+
+    <div class='container-fluid'>
+        <div class='row'>
+            <div class='col-8 offset-2'>
+                <h1>Congratulations! Your best match is... </h1>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-8 offset-2'>
+                <h2>Name: <span id='matchName'></span></h2>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-8 offset-2'>
+                <h2>Match Score: <span id='matchScore'></span></h2>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-4 offset-2'>
+                <a class="btn btn-success btn-lg start" href="/home" role="button">Home</a>
+            </div>
+            <div class='col-4'>
+                <a class="btn btn-success btn-lg start" href="/api/friends" role="button">See All Friends</a>
+            </div>
+        </div>
+
+
+</body>
+
+</html>

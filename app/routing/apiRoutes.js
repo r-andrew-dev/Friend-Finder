@@ -33,7 +33,7 @@ module.exports = function(app) {
             }
         )
         friendData.push(req.body);
-        res.send(bestMatch);
+        res.send({bestMatch});
 
     })
 }

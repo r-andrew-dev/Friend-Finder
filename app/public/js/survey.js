@@ -30,6 +30,7 @@ $("#question-startButton").on('click', function () {
 });
 
 $("#question-button").on('click', function () {
+    $('#range').val(3)
     $("#questions").css("background-image", "url('../assets/images/" + survey.imageUrls[count] + "')")
     $("#question").text(survey.questions[count]);
     $("#left-range").text(survey.ranges.rangeLeft[count]);
@@ -39,9 +40,10 @@ $("#question-button").on('click', function () {
     count++
     
     if (count === 9) {
-        $("question-button").text('submit');
-        $("#range").css("display", "none");
-        $("#question").text("Thank you for submitting!")
+        $('question-button').text('submit');
+        $('question-button').on('click', function() {
+            location.href = '/complete'
+        });
 
         
 
@@ -60,10 +62,16 @@ $("#question-button").on('click', function () {
 
         $.post("/api/friends", newFriend,
         function(data) {
-            $("#name").val() = ""
-            $("#range").val() = 3
+            $("#name").text("") 
+            $("#range").val(3);
             answers = []
-        })
+            console.log(friendData)
+            // $('#matchName').text(friendData.name)
+            // $('#matchScore').text(friendData.bestMatch)
+     
+             })
+            //  displayMatch();
 
-    }
-})
+        };
+    });
+
