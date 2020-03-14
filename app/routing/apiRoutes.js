@@ -1,27 +1,47 @@
-// setting up dependencies
-const { createClient } = require('@typeform/api-client')
-const keys = require("../keys.js");
-const typeformClient = createClient({ token: keys.typeform.token});
-
-typeformClient.responses.list({uid: 'GDsDD1'}).then(response => {
-
-    console.log(response)
-
-}, reason => {
-    console.log(reason);
-})
+const friendData = require("../data/friends.js")
 
 module.exports = function(app) {
 
     app.get('/api/friends', function(req, res){
 
+        res.json(friendData);
+    })
 
-        req.params.people
-        res.json(data)
+    app.post('/api/friends', function(req, res) {
 
+        console.log(req.body);
         
+
+        let bestMatch = {}
+        let bestScore = 55
+        let newFriendScores = Object.values(req.body).splice(1)
+        console.log(newFriendScores)
+        friendData.forEach (
+            function(currentFriend) {
+                 let currentFriendScores = Object.values(currentFriend).splice(1)
+                 let totalScore = 0;
+                    currentFriendScores.forEach(
+                        function(currentScore, index) {
+                            totalScore += Math.abs(currentScore - newFriendScores[index])
+                        }
+                        
+                    )
+                if (totalScore < bestScore) {
+                    bestMatch = currentFriend
+                    bestScore = totalScore
+                }
+            }
+        )
+        friendData.push(req.body);
+        res.send(bestMatch);
+
     })
 }
+
+// when user submits survey, needs to send 'newFriend' to backend, compare newFriend to every other friend in 
+// list, and return to user on front end the best/closest match. 
+
+
 
 
 
