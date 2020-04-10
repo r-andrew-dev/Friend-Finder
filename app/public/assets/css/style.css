@@ -6,10 +6,12 @@
 }
 
 h1 {
+    text-align: center;
     margin-top: 10%;
 }
 
 .jumbotron.one{
+    font-size: 32px;
     margin-top: 5%;
     background-image: url('../images/Main-PB&J.jpg');
     background-size: cover;
@@ -21,6 +23,7 @@ h1 {
 }
 
 .jumbotron.two{
+    font-size: 32px;
     margin-top: 5%;
     background-image: url('../images/1-PB&JMain.jpg');
     background-size: cover;
@@ -29,6 +32,12 @@ h1 {
     text-shadow: 2px 2px #34424D;
     text-align: center;
     height: 80%;
+
+}
+
+.lead {
+
+    font-size: 28px;
 
 }
 
@@ -45,7 +54,7 @@ h1 {
 
 input {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 5%;
     color: seashell;
     width: 80%;
@@ -54,9 +63,9 @@ input {
     border: none;
 }
 
-#question-start {
+#question-start, #question-image {
     position: relative;
-    top: 30%;
+    top: 20%;
     font-family: 'Raleway', sans-serif;
     font-size: 44px;
 }
@@ -69,15 +78,24 @@ input {
     font-family: 'Roboto Mono', monospace;
 }
 
-#questions {
+#questions, #image-question, #question-results {
     text-align: center;
-    margin-top: 5%;
     background-position: 0% 20%;
     height: 80%;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+}
+
+#questions, #image-question {
     color: seashell;
 }
+
+#question-results {
+
+    color: #34424D;
+
+}
+
 
 #question {
 
@@ -124,3 +142,6 @@ input {
     font-family: 'Roboto Mono', monospace;
 }
 
+#match-image {
+    padding: 5%;
+}

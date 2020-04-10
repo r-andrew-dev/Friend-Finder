@@ -19,9 +19,9 @@
 
 <body>
 
-    <div class='container-fluid'>
+    <div class='container-fluid' id='question-results' style="background-image:url('./assets/images/background.png')">
         <div class='row'>
-            <div class='col-8 offset-2'>
+            <div class='col-12'>
                 <h1>Congratulations! Your best match is... </h1>
             </div>
         </div>
@@ -36,18 +36,17 @@
             </div>
         </div>
         <div class='row'>
-            <div class='col-6 offset-4'>
-                <img id='match-image' src='#'><img>
+            <div class='col-12'>
+                <a class="btn btn-success btn-lg start" href="/home" role="button">Home</a>
+                <a class="btn btn-success btn-lg start" href="/api/friends" role="button">All Friends</a>
             </div>
         </div>
         <div class='row'>
-            <div class='col-4 offset-3'>
-                <a class="btn btn-success btn-lg start" href="/home" role="button">Home</a>
-            </div>
-            <div class='col-4'>
-                <a class="btn btn-success btn-lg start" href="/api/friends" role="button">See All Friends</a>
+            <div class='col-12'>
+                <img id='match-image' src='#'><img>
             </div>
         </div>
+    </div>
 
 
 
