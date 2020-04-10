@@ -32,7 +32,7 @@ h1 {
 
 }
 
-#start-question {
+#start-question, #image-question {
     background-color:  #34424D;
     color: seashell;
     text-align: center;
@@ -61,7 +61,7 @@ input {
     font-size: 44px;
 }
 
-#question-startButton {
+#question-startButton, #question-imageButton {
     position: absolute;
     top: 70%;
     right: 5%;

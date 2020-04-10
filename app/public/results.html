@@ -32,11 +32,16 @@
         </div>
         <div class='row'>
             <div class='col-8 offset-2'>
-                <h2>Match Score: <span id='matchScore'></span></h2>
+                <h2>Compatibility Score: <span id='matchScore'></span></h2>
             </div>
         </div>
         <div class='row'>
-            <div class='col-4 offset-2'>
+            <div class='col-6 offset-4'>
+                <img id='match-image' src='#'><img>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col-4 offset-3'>
                 <a class="btn btn-success btn-lg start" href="/home" role="button">Home</a>
             </div>
             <div class='col-4'>
@@ -45,6 +50,23 @@
         </div>
 
 
+
+
+
+<script>
+            let match = JSON.parse(localStorage.getItem("match")) 
+            $("#matchName").text(match.bestMatch.name);
+            let bigDiff = 40
+            incompatScore = (match.bestScore / bigDiff) * 100
+            compatScore = 100 - incompatScore
+            $("#matchScore").text(compatScore + "%");
+            console.log(match.bestMatch.image)
+            $("#match-image").attr('src', match.bestMatch.image)
+
+</script> 
+
 </body>
+
+
 
 </html>

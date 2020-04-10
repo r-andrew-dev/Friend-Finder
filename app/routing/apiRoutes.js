@@ -14,11 +14,11 @@ module.exports = function(app) {
 
         let bestMatch = {}
         let bestScore = 55
-        let newFriendScores = Object.values(req.body).splice(1)
+        let newFriendScores = Object.values(req.body).splice(2)
         console.log(newFriendScores)
         friendData.forEach (
             function(currentFriend) {
-                 let currentFriendScores = Object.values(currentFriend).splice(1)
+                 let currentFriendScores = Object.values(currentFriend).splice(2)
                  let totalScore = 0;
                     currentFriendScores.forEach(
                         function(currentScore, index) {
@@ -33,8 +33,7 @@ module.exports = function(app) {
             }
         )
         friendData.push(req.body);
-        res.send({bestMatch});
-
+        res.send({bestMatch, bestScore});
     })
 }
 
