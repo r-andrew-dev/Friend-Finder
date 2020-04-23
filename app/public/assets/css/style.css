@@ -12,7 +12,6 @@ h1 {
 
 .jumbotron.one{
     font-size: 32px;
-    margin-top: 5%;
     background-image: url('../images/Main-PB&J.jpg');
     background-size: cover;
     color: seashell;
@@ -24,7 +23,6 @@ h1 {
 
 .jumbotron.two{
     font-size: 32px;
-    margin-top: 5%;
     background-image: url('../images/1-PB&JMain.jpg');
     background-size: cover;
     background-position: 0% 50%; 
