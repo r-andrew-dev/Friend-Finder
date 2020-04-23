@@ -1,0 +1,27 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "A compatibility based friend-finder application. Takes in the results from user surveys and matches with the most compatible/similar scoring person in the database. Full-stack application built using Javascript, Node.js, and Express, and deployed through Heroku. (Built for Homework in Coding Bootcamp through University of WI)",
+  "main": "server.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/r-andrew-dev/Friend-Finder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/r-andrew-dev/Friend-Finder/issues"
+  },
+  "homepage": "https://github.com/r-andrew-dev/Friend-Finder#readme"
+}
